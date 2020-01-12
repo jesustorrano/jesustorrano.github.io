@@ -1,21 +1,45 @@
+* {
+    /* margin: 0px; */
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+/*
+
+
+
+*/
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Julius Sans One', sans-serif;    
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 body {
-    font-size: 13px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;    
     margin: 0;
+    background-color: #ffe7d1;
 }
 
 a {
+    font-size: 20px;
     text-decoration: none;
     cursor: pointer;
+    color: #f6c89f;
+    font-weight: normal;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: gainsboro;
-    width: 100%;
-    height: 60px;
+    background-color: #396362;
+    height: 128px;
 }
 
 header nav {
@@ -34,6 +58,87 @@ header nav ul {
 }
 
 header li a {
-    color: black;
     margin: 5px;
+}
+
+header figure {
+    margin: 0px ;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header figure img {
+    border-radius: 50px;
+    margin-left: 24px;
+}
+
+.about {
+    background-color: #f6c89f;
+    color: #396362;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    
+}
+
+.about h1 {
+    font-size: 45px;
+}
+
+.about p {
+    font-size: 30px;
+}
+
+.work {
+    background-color: #396362;
+    display: flex;
+    
+}
+
+.work .work-item {
+    background-color: #4b8e8d;
+    border: 1px solid #4b8e8d;
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+}
+
+.work-item-imageContainer {
+    margin: 0px;
+    padding: 0px;
+}
+
+.work .work-item img {
+    
+    width: 480px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.work-details {
+    border-radius: 3px;
+    margin: 20px 40px;   
+    margin-top: -20px;   
+    background-color: #f6c89f;
+    position: relative;
+    padding: 20px;
+    height: 200px;
+}
+
+.contact {
+    background-color: #396362;
+    color: #ffe7d1;
+    height: 150px;
+    display: flex;
+    align-items: center;
+
 }
