@@ -23,7 +23,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;    
     margin: 0;
-    background-color: #ffe7d1;
+    background-color: #396362;
 }
 
 a {
@@ -96,7 +96,7 @@ header figure img {
 .work {
     background-color: #396362;
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 .work .work-item {
@@ -143,38 +143,41 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     align-items: center;
 }
 
-.social {
-    border: 1px solid red;
+.contact a {
+    margin-left: 20px ;
 }
+
 
 .social-link {
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid blue;
     background-size: 50px 50px;   
 }
 
 .social-link.twitter {
-    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/gorjeo.svg');
+    background-image: url('https://jesustorrano.github.io/imagenes/gorjeo.svg');
 }
-
 
 .social-link.facebook {
-    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/facebook.svg');
+    background-image: url('https://jesustorrano.github.io/imagenes/facebook.svg');
 }
-
-
-.social-link.github {
-    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/github.svg');
-}
-
 
 .social-link.instagram {
-    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/instagram.svg');
+    background-image: url('https://jesustorrano.github.io/imagenes/instagram.svg');
 }
 
-
 .social-link.linkedin {
-    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/linkedin.svg');
+    background-image: url('https://jesustorrano.github.io/imagenes/linkedin.svg');
+}
+
+.container {
+    
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
