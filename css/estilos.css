@@ -139,6 +139,42 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     color: #ffe7d1;
     height: 150px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
 
+.social {
+    border: 1px solid red;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue;
+    background-size: 50px 50px;   
+}
+
+.social-link.twitter {
+    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/gorjeo.svg');
+}
+
+
+.social-link.facebook {
+    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/facebook.svg');
+}
+
+
+.social-link.github {
+    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/github.svg');
+}
+
+
+.social-link.instagram {
+    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/instagram.svg');
+}
+
+
+.social-link.linkedin {
+    background-image: url('https://jesustorrano.github.io/imagenes/social-icons/linkedin.svg');
 }
