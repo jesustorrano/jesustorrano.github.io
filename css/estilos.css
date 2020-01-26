@@ -1,14 +1,50 @@
 * {
     /* margin: 0px; */
     padding: 0px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
 }
-/*
 
-
-
-*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?w0f40r');
+    src:  url('../fonts/icomoon.eot?w0f40r#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?w0f40r') format('truetype'),
+      url('../fonts/icomoon.woff?w0f40r') format('woff'),
+      url('../fonts/icomoon.svg?w0f40r#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  }
+  
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Julius Sans One', sans-serif;    
@@ -101,10 +137,8 @@ header figure img {
 
 .work .work-item {
     background-color: #4b8e8d;
-    border: 1px solid #4b8e8d;
-    margin: 10px;
-    width: 480px;
-    flex-shrink: 0;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
@@ -158,28 +192,21 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     margin-left: 20px ;
 }
 
+.social {
+
+    margin-right: 7px;
+}
 
 .social-link {
+    
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-size: 50px 50px;   
-}
-
-.social-link.twitter {
-    background-image: url('https://jesustorrano.github.io/imagenes/gorjeo.svg');
-}
-
-.social-link.facebook {
-    background-image: url('https://jesustorrano.github.io/imagenes/facebook.svg');
-}
-
-.social-link.instagram {
-    background-image: url('https://jesustorrano.github.io/imagenes/instagram.svg');
-}
-
-.social-link.linkedin {
-    background-image: url('https://jesustorrano.github.io/imagenes/linkedin.svg');
+    border: 1px solid #f6c89f;
+    border-radius: 30%;
+    line-height: 50px;
+    text-align: center;
+    
 }
 
 .container {
@@ -192,3 +219,28 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     height: inherit;
     flex-wrap: inherit;
 }
+
+footer {
+    text-align: center;
+    color: lightgray;
+}
+
+
+.flexible-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background-color: blue;
+}
+
+.youtube-video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
