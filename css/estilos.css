@@ -1,3 +1,10 @@
+
+:root {
+    --main-background-color: #396362;
+    --article-background: #f6c89f;
+    --workitem-background: #4b8e8d;
+    --hero-background: #ffe7d1;
+}
 * {
     /* margin: 0px; */
     padding: 0px;
@@ -59,14 +66,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;    
     margin: 0;
-    background-color: #396362;
+    background-color: var (--main-background-color);
 }
 
 a {
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
-    color: #f6c89f;
+    color: var(--article-background);
     font-weight: normal;
     font-family: 'Archivo Narrow', sans-serif;
 }
@@ -74,7 +81,7 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #396362;
+    background-color: var(--main-background-color);
     height: 128px;
 }
 
@@ -111,8 +118,8 @@ header figure img {
 }
 
 .about {
-    background-color: #f6c89f;
-    color: #396362;
+    background-color: var(--hero-background);
+    color:  var(--main-background-color);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -130,14 +137,16 @@ header figure img {
 }
 
 .work {
-    background-color: #396362;
+    background-color: var(--main-background-color);
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .work .work-item {
-    background-color: #4b8e8d;
+    background-color: var(--workitem-background);
     margin: 1%;
+    max-width: 480px;
     width: 48%;
     border-radius: 10px;
     overflow: hidden;
@@ -162,7 +171,7 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     border-radius: 3px;
     margin: 20px 40px;   
     margin-top: -20px;   
-    background-color: #f6c89f;
+    background-color: var(--article-background);
     position: relative;
     padding: 15px;
     height: 200px;
@@ -180,8 +189,8 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
 
 
 .contact {
-    background-color: #396362;
-    color: #ffe7d1;
+    background-color: var(--main-background-color);
+    color: var(--hero-background);
     height: 150px;
     display: flex;
     justify-content: space-between;
@@ -202,7 +211,7 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid #f6c89f;
+    border: 1px solid var(--article-background);
     border-radius: 30%;
     line-height: 50px;
     text-align: center;
@@ -211,7 +220,7 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
 
 .container {
     
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
