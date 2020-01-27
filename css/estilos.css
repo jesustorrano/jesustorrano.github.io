@@ -1,10 +1,11 @@
 
 :root {
-    --main-background-color: #396362;
-    --article-background: #f6c89f;
-    --workitem-background: #4b8e8d;
-    --hero-background: #ffe7d1;
+    --main-background-color: #1b262c;
+    --article-background: #bbe1fa;
+    --workitem-background: #3282b8;;
+    --hero-background: #0f4c75;
 }
+
 * {
     /* margin: 0px; */
     padding: 0px;
@@ -119,7 +120,7 @@ header figure img {
 
 .about {
     background-color: var(--hero-background);
-    color:  var(--main-background-color);
+    color:  var(--article-background); 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
