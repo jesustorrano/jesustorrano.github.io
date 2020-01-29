@@ -1,4 +1,7 @@
-
+/*
+fuente de imagenes
+https://imgur.com/a/TNFafo7
+*/
 :root {
     --main-background-color: #1b262c;
     --article-background: #bbe1fa;
@@ -7,10 +10,7 @@
 }
 
 * {
-    /* margin: 0px; */
     padding: 0px;
-    /* box-sizing: border-box; */
-
 }
 
 @font-face {
@@ -125,7 +125,8 @@ header figure img {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    height: 320px;
+    height: calc(100vh - 138px);
+    
     
 }
 
@@ -135,6 +136,7 @@ header figure img {
 
 .about p {
     font-size: 30px;
+    margin-bottom: 0px;
 }
 
 .work {
@@ -152,8 +154,8 @@ header figure img {
     border-radius: 10px;
     overflow: hidden;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
--moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
 }
 
 .work-item-imageContainer {
@@ -162,7 +164,6 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
 }
 
 .work .work-item img {
-    
     width: 480px;
     height: 250px;
     object-fit: cover;
@@ -203,12 +204,10 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
 }
 
 .social {
-
     margin-right: 7px;
 }
 
 .social-link {
-    
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -216,11 +215,9 @@ box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
     border-radius: 30%;
     line-height: 50px;
     text-align: center;
-    
 }
 
 .container {
-    
     width: 100%;
     margin: 0 auto;
     display: inherit;
@@ -254,3 +251,29 @@ footer {
     height: 100%;
 }
 
+
+.tech-container{
+    justify-content: center;
+    
+    display: grid;
+    grid-template: repeat(2, 100px) / repeat(4, 200px);
+    grid-gap: 5px;
+    background-color: var(--hero-background);
+    margin: 50px 0px;
+    padding: 50px 0px;
+    height: calc(100vh - 138px);
+}
+
+.tech-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(255,255,255 );
+    border-radius: 10px;
+}
+
+.tech-item figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
